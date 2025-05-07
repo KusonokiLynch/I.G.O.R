@@ -1,0 +1,266 @@
+/* Estilos generales */
+body, p {
+    background-color: #FAFAFA;
+    color: #2F3437;
+    font-family: 'Inter', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 48px;
+    color: #026AA7;
+    font-weight: 700;
+}
+h2 {
+    font-size: 36px;
+    color: #026AA7;
+    font-weight: 700;
+}
+h3 {
+    font-size: 28px;
+    color: #026AA7;
+    font-weight: 700;
+}
+
+/* Estilos del header */
+header {
+    width: 100%;
+    background-color: #2F3437;
+}
+
+/* Barra de contacto */
+.barra-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #E3E3E3;
+    color: #2F3437;
+    font-size: 14px;
+}
+
+/* Enlaces de contacto */
+.contacto a {
+    color: #2DB47D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+    color: #026AA7;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para íconos SVG */
+.icon {
+    fill: #2DB47D;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    fill: #026AA7;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #EDEDED;
+    gap: 15px;
+}
+
+.navbar-button {
+    background-color: #0057d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Esto ayuda si el texto es largo */
+}
+
+.navbar-button:hover {
+    background-color: #004bb5;
+    transform: translateY(-1px);
+}
+
+
+/* Contenedor del logo a la izquierda */
+.logo-container {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 80px; 
+    width: auto;
+}
+
+/* Botones reutilizables */
+.btn {
+    background-color: #026AA7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #035c91;
+}
+
+/* Caja desplegable */
+.caja-desplegable {
+    background-color: #E3E3E3;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Flecha desplegable */
+.flecha {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Texto desplegable */
+.texto-desplegable {
+    display: none;
+    background-color: #FECB2E;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Botón desplegable */
+.toggle-btn {
+    padding: 8px 15px;
+}
+
+/* Estilo para la sección de la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #2c2c2c;
+    color: #eaeaea;
+    padding: 30px 40px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #00a884;
+  }
+  
+  .footer-left p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .footer-left i {
+    margin-right: 8px;
+    color: #00a884;
+  }
+  
+  .social-icons a {
+    color: #00a884;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-right p {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  
+.acordeon {
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acordeon-header {
+    background: #f1f1f1;
+    padding: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon-body {
+    display: none;
+    background: #fff;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
